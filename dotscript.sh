@@ -15,4 +15,6 @@ cp -rf ~/.config/i3 ~/dotfiles/.config
 # copy kitty config folder
 cp -rf ~/.config/kitty ~/dotfiles/.config
 
+# copy polybar config folder
+cp -rf ~/.config/polybar ~/dotfiles/.config
 
