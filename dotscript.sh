@@ -21,3 +21,6 @@ cp -rfv ~/.config/polybar ~/dotfiles/.config
 # copy rofi config folder
 cp -rfv ~/.config/rofi ~/dotfiles/.config
 
+# copy zathura config folder
+cp -rfv ~/.config/zathura ~/dotfiles/.config
+
