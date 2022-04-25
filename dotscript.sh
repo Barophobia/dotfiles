@@ -1,20 +1,23 @@
 #!/bin/bash
 
 # copy vimrc
-cp -f ~/.vimrc ~/dotfiles/
+cp -fv ~/.vimrc ~/dotfiles/
 
 # copy zshrc
-cp -f ~/.zshrc ~/dotfiles
+cp -fv ~/.zshrc ~/dotfiles
 
 # copy bashrc
-cp -f ~/.bashrc ~/dotfiles
+cp -fv ~/.bashrc ~/dotfiles
 
 # copy i3 config folder
-cp -rf ~/.config/i3 ~/dotfiles/.config
+cp -rfv ~/.config/i3 ~/dotfiles/.config
 
 # copy kitty config folder
-cp -rf ~/.config/kitty ~/dotfiles/.config
+cp -rfv ~/.config/kitty ~/dotfiles/.config
 
 # copy polybar config folder
-cp -rf ~/.config/polybar ~/dotfiles/.config
+cp -rfv ~/.config/polybar ~/dotfiles/.config
+
+# copy rofi config folder
+cp -rfv ~/.config/rofi ~/dotfiles/.config
 
