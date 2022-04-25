@@ -23,6 +23,9 @@ bindsym $mod+Shift+z	gaps outer current minus 5
 #Lockscreen bind
 bindsym $mod+shift+x exec betterlockscreen -l blur
 
+#Screenshot bind (scrot)
+bindsym --release $mod+shift+s exec scrot -s ~/screenshots/%b%d:%H%M%S.png
+
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -56,7 +59,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Use pactl to switch audio device
-bindsym $mod+bracketleft exec --no-startup-id pactl set-default-sink 1
+bindsym $mod+bracketleft exec --no-startup-id pactl set-default-sink 0
 bindsym $mod+bracketright exec --no-startup-id pactl set-default-sink 2 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -76,28 +79,17 @@ bindsym $mod+d exec "rofi -modi drun,run -show drun"
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
-# change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
-
-# alternatively, you can use the cursor keys:
+# Focus using the arrow keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-# move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
-
-# alternatively, you can use the cursor keys:
+# Move focussed windows using arrow keys :
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
+
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
