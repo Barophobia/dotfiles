@@ -24,3 +24,6 @@ cp -rfv ~/.config/rofi ~/dotfiles/.config
 # copy zathura config folder
 cp -rfv ~/.config/zathura ~/dotfiles/.config
 
+# copy dunst config folder
+cp -rfv ~/.config/dunst ~/dotfiles/.config
+

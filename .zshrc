@@ -98,6 +98,7 @@ alias pac="sudo pacman -S"
 alias pacu="sudo pacman -Sy"
 #Kitty ssh fix
 alias ssh='env TERM=xterm-256color ssh' 
+alias transmission='transmission-remote'
 
 # Colorize commands when possible.
 alias ls="ls -hN --color=auto --group-directories-first"
