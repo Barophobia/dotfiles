@@ -6,7 +6,7 @@ Configuration files for software I use.
 
 
 ## Installation
-To automatically install all my config files you can just use the install script.
+To automatically install all my config files you can just use the install script in the folder of your OS.
 
 ```
 ./install.sh
