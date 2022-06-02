@@ -16,10 +16,10 @@
         - docker-compose
       state: present
 
-#  - name: Clone dotfiles repo
-#    ansible.builtin.git:
-#      repo: https://github.com/barophobia/dotfiles
-#      dest: ~/dotfiles
+  - name: Clone dotfiles repo
+    ansible.builtin.git:
+      repo: https://github.com/barophobia/dotfiles
+      dest: ~/dotfiles
   
   - name: Execute the shell install script
     command: "bash ~/dotfiles/linux/install.sh || /bin/true"
