@@ -4,8 +4,6 @@
   - name: Install packages
     community.general.pacman:
       name:
-        - python
-        - git
         - ansible
         - terraform
         - vim
