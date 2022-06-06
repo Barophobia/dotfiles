@@ -1,4 +1,5 @@
-- hosts: artix
+# Basic install of required packages and dotfiles deployment 
+- hosts: 
   become: yes
   tasks:
   - name: Install packages
