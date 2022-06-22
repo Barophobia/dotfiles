@@ -28,3 +28,9 @@ alias pdf="zathura"
 
 #Kitty SSH Fix
 alias ssh='env TERM=xterm-256color ssh' 
+
+#Show disk space
+ds () {
+   echo "Disk Space Utilization for $HOSTNAME"
+   df -h
+}
