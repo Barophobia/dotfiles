@@ -22,3 +22,6 @@ map f toggle_fullscreen
 map [fullscreen] f toggle_fullscreen
 
 map i toggle_index
+
+#copy to clipboard
+set selection-clipboard clipboard
