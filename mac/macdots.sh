@@ -14,3 +14,9 @@ cp -rfv ~/.config/yabai ~/dotfiles/mac
 
 # copy zathura config folder
 cp -rfv ~/.config/zathura ~/dotfiles/mac
+
+# copy sketchybar config folder
+cp -rfv ~/.config/sketchybar ~/dotfiles/mac
+
+# copy skhd config folder
+cp -rfv ~/.config/skhd ~/dotfiles/mac
