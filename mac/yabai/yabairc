@@ -28,11 +28,11 @@ yabai -m config mouse_action2              resize
 yabai -m config mouse_drop_action          swap
 
 
-yabai -m config top_padding                11
-yabai -m config bottom_padding             15
-yabai -m config left_padding               15
-yabai -m config right_padding              15
-yabai -m config window_gap                 12
+yabai -m config top_padding                4
+yabai -m config bottom_padding             8
+yabai -m config left_padding               10
+yabai -m config right_padding              10
+yabai -m config window_gap                 10
 # Do not manage some apps which are not resizable
 yabai -m rule --add app="^(LuLu|Vimac|Calculator|VLC|System Preferences|zoom.us|Photo Booth|Archive Utility|Python|LibreOffice)$" manage=off
 
