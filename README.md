@@ -9,3 +9,9 @@ To automatically install all my config files you can just use the install script
 ```
 ./install.sh
 ```
+
+To install nvim:
+The nvim folder needs to be inside the .config folder, the setup requires packer as a plugin manager.
+```
+cp -r nvim ~/.config
+```
