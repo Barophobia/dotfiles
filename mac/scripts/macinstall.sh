@@ -10,5 +10,5 @@ cp -rfv ~/dotfiles/mac/.vimrc $HOME/
 cp -rfv ~/dotfiles/mac/.bashrc $HOME/
 
 #Move Config folder
-cp -rfv ~dotfiles/mac/.config $HOME/
+cp -rfv ~/dotfiles/mac/.config $HOME/
 
