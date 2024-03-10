@@ -14,6 +14,7 @@ brew install --cask keepassxc
 echo "Installing Development Apps"
 brew install docker
 brew install git
+brew install ansible
 brew install --cask visual-studio-code
 brew install --cask microsoft-remote-desktop
 
