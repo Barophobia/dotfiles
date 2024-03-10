@@ -21,9 +21,8 @@ export HISTFILESIZE=50
 export TERM=xterm-color
 
 ## Aliases
-alias pac="sudo pacman -S"
-alias pacu="sudo pacman -Syu"
 alias pdf="zathura"
+alias icd="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
 
 #Kitty SSH Fix
 alias ssh='env TERM=xterm-256color ssh' 
