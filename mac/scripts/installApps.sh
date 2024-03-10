@@ -36,3 +36,16 @@ brew install --cask steam
 
 # Install media app
 brew install --cask mpv
+
+# Install Zathura
+echo "Installing Zathura and Zathura PDF Poppler"
+brew tap zegervdv/zathura
+brew install zathura
+brew install zathura-pdf-poppler
+
+echo "Configuring Zathura PDF Poppler"
+mkdir -p $(brew --prefix zathura)/lib/zathura
+ln -s $(brew --prefix zathura-pdf-poppler)/libpdf-poppler.dylib $(brew --prefix zathura)/lib/zathura/libpdf-poppler.dylib
+echo "Zathura PDF Poppler Configuration Complete"
+
+echo "The apps have been installed"
