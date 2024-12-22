@@ -15,3 +15,10 @@ To automatically install all my config files you can just use the install script
 ```
 cp -r nvim ~/.config
 ```
+
+### Using Auto-deploy
+The auto-deploy script has only been tested using Fedora (Hence the distro folder) if your distro uses dnf as a package manager then it should still work.
+Script must be run using sudo to complete correctly:
+```
+sudo ~/dotfiles/linux/auto-deploy/Fedora/auto-deploy.sh
+```
