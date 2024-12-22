@@ -1,0 +1,27 @@
+---
+- name: Deploy Software and Desktop Enivronment
+  hosts: localhost
+  connection: local
+  become_user: root
+  become_method: sudo
+  become: true
+  tasks:
+
+  - name: Upgrade all packages
+    ansible.builtin.dnf:
+      name: "*"
+      state: latest
+
+
+  - name: Install the latest version of required packages
+    ansible.builtin.dnf:
+      name:
+        - vim
+        - hyprland
+        - hyprpaper
+        - mpv
+        - ranger
+        - btop
+        - rofi 
+      state: latest
+
