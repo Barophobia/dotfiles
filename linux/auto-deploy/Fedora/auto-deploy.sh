@@ -9,6 +9,13 @@ fi
 # Update packages to the latest version
 dnf update
 
+# Install and configure Git oauth
+dnf install git-credential-oauth
+git credential-oauth configure
+git config --global --unset-all credential.helper
+git config --global --add credential.helper "cache --timeout 21600" # six hours
+git config --global --add credential.helper oauth
+
 # Install pipx and ensure PATH is set correctly
 dnf install pipx
 pipx ensurepath
