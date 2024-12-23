@@ -9,25 +9,27 @@ fi
 # Update packages to the latest version
 dnf update
 
-# Install and configure Git oauth
-dnf install git-credential-oauth
+software_required = ("
+	"git-credential-oauth"
+	"pipx"
+	"python3-libdnf5"
+	"zsh"
+	
+")
+
+# Configure Git oauth
 git credential-oauth configure
 git config --global --unset-all credential.helper
 git config --global --add credential.helper "cache --timeout 21600" # six hours
 git config --global --add credential.helper oauth
 
-# Install pipx and ensure PATH is set correctly
-dnf install pipx
+# Ensure pipx PATH is set correctly
 pipx ensurepath
 
 # Install ansible using pipx
 pipx install --include-deps ansible
 
-# Install required dnf module
-dnf install python3-libdnf5
-
-# Install ZSH and oh-my-zsh and change shell
-dnf install zsh
+# Install oh-my-zsh and change shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 chsh -s /bin/zsh $USER
 
