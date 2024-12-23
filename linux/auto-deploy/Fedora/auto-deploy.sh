@@ -9,13 +9,24 @@ fi
 # Update packages to the latest version
 dnf update
 
-software_required = ("
+software_required=(
 	"git-credential-oauth"
 	"pipx"
 	"python3-libdnf5"
-	"zsh"
-	
-")
+	"zsh"	
+        "vim"
+        "hyprland"
+        "hyprpaper"
+        "mpv"
+        "ranger"
+        "btop"
+        "rofi" 
+ 
+
+for i in ${software_required[@]}
+do
+	dnf install $i
+done
 
 # Configure Git oauth
 git credential-oauth configure
