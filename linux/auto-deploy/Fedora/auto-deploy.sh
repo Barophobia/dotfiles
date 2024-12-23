@@ -9,6 +9,7 @@ fi
 # Update packages to the latest version
 dnf update
 
+# Array that lists the software to be installed
 software_required=(
 	"git-credential-oauth"
 	"pipx"
@@ -21,8 +22,8 @@ software_required=(
         "ranger"
         "btop"
         "rofi" 
- 
 
+# Installs software listed in the array above 
 for i in ${software_required[@]}
 do
 	dnf install $i
