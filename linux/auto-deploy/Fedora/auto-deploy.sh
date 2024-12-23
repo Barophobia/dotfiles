@@ -19,16 +19,17 @@ pipx install --include-deps ansible
 # Install required dnf module
 dnf install python3-libdnf5
 
-# Install ZSH and oh-my-zsh
+# Install ZSH and oh-my-zsh and change shell
 dnf install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+chsh -s /bin/zsh $USER
 
 # Run ansible playbook
-ansible-playbook /home/barophobia/dotfiles/linux/linux-desktop-setup.yaml
+ansible-playbook /home/$USER/dotfiles/linux/auto-deploy/Fedora/linux-desktop-setup.yaml
 
 # Move wallpaper to Pictures folder
-cp ~/dotfiles/wallpapers/mountains.jpg ~/Pictures/
-mv ~/Pictures/mountains.jpg ~/Pictures/mountains.webp
+cp /home/$USER/dotfiles/wallpapers/mountains.jpg ~/Pictures/
+mv /home/$USER/Pictures/mountains.jpg ~/Pictures/mountains.webp
 
 # Echo recommendation to reboot
 echo "Reboot now and login to hyprland"

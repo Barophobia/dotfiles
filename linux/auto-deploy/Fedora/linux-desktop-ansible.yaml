@@ -1,5 +1,5 @@
 ---
-- name: Deploy Software and Desktop Enivronment
+- name: Deploy Software and Desktop Environment
   hosts: localhost
   connection: local
   become_user: root
